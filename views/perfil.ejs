@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Perfil</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;800&family=Oswald:wght@300;400;500;600&family=Rajdhani:wght@400;500;700&family=Raleway:wght@400;700&display=swap" rel="stylesheet"> 
+    <link rel='stylesheet' href='/stylesheets/perfil.css' />
+</head>
+<body>
+
+    <%- include('./partials/header') %>
+
+    <main>
+        <div class="divMeioPerfil">
+            <div id="blocoPerfil">
+                <section id="fotoPerfil">
+                    <div class="fotoPerf">
+
+                    </div>
+                </section>
+                <section>
+                    <h1><%= usuario.nomeUsuario %></h1>
+                </section>
+            </div>
+
+            <div>
+                <p>Valorant</p> <a href="">+</a>
+            </div>
+        </div>
+    </main>
+</body>
+<script>
+    const burger = document.getElementById('burger');
+    const ul = document.querySelector('nav ul');
+
+    burger.addEventListener('click', () => {
+	    burger.classList.toggle('show-x');
+	    ul.classList.toggle('show');
+    });
+</script>
+</html>

@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1,
+    "nomeUsuario": "Douglas",
+    "senha": "123456",
+    "email": "douglas@mail.com",
+    "dataNascimento": "02/03/1995"
+  },
+  {
+    "id": 2,
+    "nomeUsuario": "HumbertoGuedes",
+    "senha": "654321",
+    "email": "humberto@mail.com",
+    "dataNascimento": "05/09/1932"
+  },
+  {
+    "id": 3,
+    "nomeUsuario": "douglas2",
+    "hashed": "$2a$10$Y3Bu.Z2zJ//0WSDWA7mwxeNuXD0fviLLjr1H1yFmpactoKj4i0v6a",
+    "email": "a@a",
+    "dataNascimento": "1995-03-02"
+  },
+  {
+    "id": 4,
+    "nomeUsuario": "d",
+    "hashed": "$2a$10$BGwBGx/R0x7L7X96Sfklke8C5J9VOGaGrBXqGnCRfyrsDkrRUBXba",
+    "email": "d@d",
+    "dataNascimento": "1995-03-02"
+  }
+]

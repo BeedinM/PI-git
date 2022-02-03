@@ -1,0 +1,108 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-image: url(../images/smart-g5c428d9f9_1920.jpg);
+    font-family: 'Oswald', sans-serif;
+  }
+  
+  
+  main {
+    width: 100%;
+    min-height: 100vh;
+    padding: 100px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    transition: 0.5s;
+  }
+  
+  header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 40px 100px;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  }
+
+  .meioTotal {
+    display: flex;
+
+    max-width: 100vw;
+    width: 100%;
+    height: 100vh;
+  }
+  
+  .meioEsquerda {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    width: 70%;
+    height: 100%;
+    
+    color: white;
+  }
+
+  h1, h2 {
+    text-transform: uppercase;
+  }
+  
+  .meioDireita {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+    width: 30%;
+    height: 100%;
+    background-image: linear-gradient(to bottom, #5B7BBD, rgba(255, 255, 255, 0));
+
+    color: white
+  }
+
+  .input-login {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      max-width: 350px;
+      width: 100%;
+  }
+  
+  #nomeUsuario, #senha {
+    width: 95%;
+    height: 35px;
+  }
+
+  a {
+    margin-bottom: 30px;
+    text-decoration: none;
+    color: white;
+  }
+  
+  @media (max-width: 550px) {
+    main {
+      display: block;
+      padding: 0;
+    }
+    header {
+      padding: 20px 20px;
+      font-size: 20px;
+    }
+    .meioTotal {
+      display: block;
+    }
+    .meioEsquerda{
+        width: 100vw;
+    }
+    .meioDireita {
+        width: 100vw;
+    }
+  }

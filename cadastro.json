@@ -1,0 +1,16 @@
+[
+    {
+            "id": 1,
+            "nomeUsuario": "Douglas",
+            "senha": "123456",
+            "email": "douglas@mail.com",
+            "dataNascimento": "02/03/1995"
+    },
+    {
+            "id": 2,
+            "nomeUsuario": "HumbertoGuedes",
+            "senha": "654321",
+            "email": "humberto@mail.com",
+            "dataNascimento": "05/09/1932"
+    }
+]

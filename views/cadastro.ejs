@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/stylesheets/cadastro.css">
+    <title> <%= title %> </title>
+</head>
+<body>
+
+    <%- include('./partials/header') %>
+
+    <main>
+
+        <div class="caixaCadastro">
+            <% if(typeof(errors) != "undefined"){ %>
+                <p style="color: brown;">ERROR</p>
+                <ul>
+                    <% errors.forEach((error) => { %> 
+                        <li><%= error.msg %></li>
+                    <% }) %>
+                </ul>
+    
+            <% } %>
+
+            <form method="POST" class="inputCadastro">
+                
+                    <label for="nomeUsuario">Nome de usuário</label>
+                    <input type="text" name="nomeUsuario" id="nomeUsuario" required>
+    
+                    <label for="senha">Senha</label>
+                    <input type="password" name="senha" id="senha" required>
+
+                    <label for="confirmaSenha">Confirmar senha</label>
+                    <input type="password" name="confirmaSenha" id="confirmaSenha" required>
+
+                    <label for="email">E-mail</label>
+                    <input type="email" name="email" id="email" required>
+  
+                    <button type="submit">Enviar</button>
+
+        </div>
+    </main>
+    
+    <footer>
+        <div class="footer">
+          <p>douglinhas copyright ₢</p>
+        </div>
+    </footer>
+</body>
+</html>
